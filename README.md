@@ -70,6 +70,11 @@ How to get
 - File > Preferences > Settings
 - Click icon to open as JSON
 
+Alternatively:
+
+- Open the command palette
+- Type/select `Preferences: Open User Settings (JSON`
+
 ```
 {
     "workbench.iconTheme": "vscode-icons",
