@@ -107,3 +107,103 @@ Alternatively:
     "terminal.integrated.defaultProfile.windows": "Git Bash"
 }
 ```
+# Quarto snippets
+
+See more details [here](https://gist.github.com/jthomasmock/11acebd4448f171f786e01397df34116?permalink_comment_id=4269591#gistcomment-4269591)
+
+```
+{
+  "column-70-30": {
+    "prefix": "column-70-30",
+    "body": [
+        ":::: {.columns}", 
+        "", 
+        "::: {.column width=\"70%\"}", 
+        "Left column", 
+        ":::", 
+        "", 
+        "::: {.column width=\"30%\"}", 
+        "Right column", 
+        ":::", 
+        "", 
+        "::::"
+    ],
+    "description": "quarto columns 70-30"
+  },
+  "column-50-50": {
+    "prefix": "column-50-50",
+    "body": [
+        ":::: {.columns}", 
+        "", 
+        "::: {.column width=\"50%\"}", 
+        "Left column", 
+        ":::", 
+        "", 
+        "::: {.column width=\"50%\"}", 
+        "Right column", 
+        ":::", 
+        "", 
+        "::::"
+    ],
+    "description": "quarto columns 50-50"
+  },
+  "column-33-33-33": {
+    "prefix": "column-33-33-33",
+    "body": [
+        ":::: {.columns}", 
+        "", 
+        "::: {.column width=\"33%\"}", 
+        "Left column", 
+        ":::", 
+        "", 
+        "::: {.column width=\"33%\"}", 
+        "Middle column", 
+        ":::", 
+        "", 
+        "::: {.column width=\"33%\"}", 
+        "Right column", 
+        ":::", 
+        "", 
+        "::::"
+    ],
+    "description": "quarto columns 50-50"
+  },
+  "panel": {
+    "prefix": "panel",
+    "body": ["::: {.panel-tabset}", "${1:body}", ":::"],
+    "description": "quarto panel"
+  },
+  "fence": {
+    "prefix": "fence",
+    "body": [":::{.${1:type}}", "${2:body}", ":::"],
+    "description": "quarto fence"
+  },
+  "aside": {
+    "prefix": "",
+    "body": ["::: aside", "${1:body}", ":::"],
+    "description": "quarto aside"
+  },
+  "fragment": {
+    "prefix": "",
+    "body": ["::: {.fragment .${1:type}}", "${2:body}", ":::"],
+    "description": "quarto fragment"
+  },
+    "details": {
+		"prefix": "",
+		"body": [
+			"<details>",
+				"\t<summary>${1:summary}</summary>",
+				"\t${2:content}",
+			"</details>",
+		],
+		"description": "HTML details tag"
+	},
+	"include": {
+		"prefix": "include",
+		"body": [
+			"{{< include ${1:file} >}}"
+		],
+		"description": "quarto include"
+	},
+}
+```
