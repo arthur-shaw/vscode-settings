@@ -11,6 +11,7 @@ How to get:
 Here are the extensions:
 
 ```
+code --install-extension bierner.docs-view
 code --install-extension catppuccin.catppuccin-vsc
 code --install-extension dracula-theme.theme-dracula
 code --install-extension eamodio.gitlens
@@ -23,6 +24,7 @@ code --install-extension graphql.vscode-graphqlcode --install-extension graphql.
 code --install-extension hai-bo.stata-language-server
 code --install-extension hediet.vscode-drawio
 code --install-extension kylebarron.stata-enhanced
+code --install-extension meezilla.json
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mhutchie.git-graph
 code --install-extension mohamed-el-fodil-ihaddaden.shinysnip
@@ -57,8 +59,7 @@ code --install-extension tomoki1207.pdf
 code --install-extension uloco.theme-bluloco-light
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension vscodevim.vim
-code --install-extension wallabyjs.quokka-vscode
-code --install-extension zhuangtongfa.material-theme
+code --install-extension zainchen.json
 ```
 
 # Settings
@@ -76,21 +77,26 @@ Alternatively:
 ```
 {
     "workbench.iconTheme": "vscode-icons",
-    "quarto.path": "C:\\\\Program Files\\\\RStudio\\\\resources\\\\app\\\\bin\\\\quarto\\\\bin\\\\quarto.exe",
+    "quarto.path": "C:/Program Files/Quarto/bin/quarto.exe",
     "workbench.colorTheme": "Catppuccin Mocha",
+    /* R */
     "r.bracketedPaste": true,
-    "r.rterm.windows": "C:\\\\WBG\\\\Anaconda3\\\\Scripts\\\\radian.exe",
+    "r.rterm.windows": "C:/WBG/Anaconda3/Scripts/radian.exe",
+    "r.plot.useHttpgd": true,
     "Lua.runtime.pathStrict": true,
     "[python]": {
         "editor.formatOnType": true
     },
-    "python.defaultInterpreterPath": "C:\\Users\\wb393438\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    /* Python */
+    "python.defaultInterpreterPath":"C:/WBG/Anaconda3/python.exe",  
     "editor.minimap.enabled": false,
+    /* Git */
     "git.autofetch": true,
     "githubPullRequests.fileListLayout": "tree",
     "githubPullRequests.pullBranch": "never",
     "git.openRepositoryInParentFolders": "always",
     "editor.accessibilitySupport": "off",
+    /* Vim */
     "editor.lineNumbers": "relative",
     "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -104,7 +110,16 @@ Alternatively:
         },
     ],
     "editor.tabSize": 2,
-    "terminal.integrated.defaultProfile.windows": "Git Bash"
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "code-runner.executorMapByFileExtension": {
+        ".do": "C:/Users/WB393438/utils/rundo.exe"
+    },
+    "code-runner.customCommand": "C:/Users/WB393438/utils/rundolines.exe",
+    "stataRun.stataPath": "C:/Program Files/Stata18/StataMP-64.exe",
+    "stataRun.whichApp": "stataMP",
+    "stataRun.pasteSpeed": 1,
+    "stataRun.advancePosition": false,
+    "diffEditor.ignoreTrimWhitespace": false,
 }
 ```
 
