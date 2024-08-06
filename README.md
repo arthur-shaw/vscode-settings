@@ -62,6 +62,12 @@ code --install-extension vscodevim.vim
 code --install-extension zainchen.json
 ```
 
+# Set up assorted R tooling
+
+- Install language server. In R: `install.packages("languageserver")`
+- Install `radian` terminal. Follow instructions [here](https://github.com/randy3k/radian?tab=readme-ov-file#installation)
+- Install `httpgd`, a package that serves up graphics in VSCode tab. In R: `install.packages("httpgd")`
+
 # Settings
 
 How to get
