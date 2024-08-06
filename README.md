@@ -135,7 +135,7 @@ The contents of `keybindings.json`
   {
     "key": "Ctrl+Shift+m",
     "command": "type",
-    "args": { "text": " |>"},
+    "args": { "text": " |>\n\t"},
     "when": "editorTextFocus && editorLangId =~ /r|rmd|qmd"
   },
   {
