@@ -191,6 +191,8 @@ The contents of `keybindings.json`
 ]
 ```
 
+See R keybinding suggestions [here](https://github.com/REditorSupport/vscode-R/wiki/Keyboard-shortcuts)
+
 # Quarto snippets
 
 See more details [here](https://gist.github.com/jthomasmock/11acebd4448f171f786e01397df34116?permalink_comment_id=4269591#gistcomment-4269591)
