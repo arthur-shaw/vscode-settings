@@ -266,22 +266,31 @@ See more details [here](https://gist.github.com/jthomasmock/11acebd4448f171f786e
     "body": ["::: {.fragment .${1:type}}", "${2:body}", ":::"],
     "description": "quarto fragment"
   },
-    "details": {
-		"prefix": "",
-		"body": [
-			"<details>",
-				"\t<summary>${1:summary}</summary>",
-				"\t${2:content}",
-			"</details>",
-		],
-		"description": "HTML details tag"
-	},
-	"include": {
-		"prefix": "include",
-		"body": [
-			"{{< include ${1:file} >}}"
-		],
-		"description": "quarto include"
-	},
+  "details": {
+    "prefix": "",
+    "body": [
+      "<details>",
+        "\t<summary>${1:summary}</summary>",
+        "\t${2:content}",
+      "</details>",
+     ],
+     "description": "HTML details tag"
+  },
+  "include": {
+    "prefix": "include",
+    "body": [
+      "{{< include ${1:file} >}}"
+    ],
+    "description": "quarto include"
+  },
+  "notes": {
+    "prefix": "notes",
+    "description": "Speaker's notes",
+    "body": [
+      "::: {.notes}",
+      "${1:contents}",
+      ":::"
+    ]
+  },
 }
 ```
