@@ -107,6 +107,69 @@ Alternatively:
     "terminal.integrated.defaultProfile.windows": "Git Bash"
 }
 ```
+
+# Keybindings
+
+The contents of `keybindings.json`
+
+```
+// Place your key bindings in this file to override the defaults
+[
+  // magrittr pipe in R, Rmd, and qmd files
+  // note: only active in insert mode of Vim
+  {
+    "key": "Ctrl+Shift+m",
+    "command": "type",
+    "args": { "text": " |>"},
+    "when": "editorTextFocus && editorLangId =~ /r|rmd|qmd"
+  },
+  {
+    "key": "Alt+-",
+    "command": "type",
+    "args": { "text": " <- "},
+    "when": "editorTextFocus && editorLangId =~ /r|rmd|qmd"
+  },
+  // terminal
+  // move position
+  {
+    "key": "ctrl+alt+win+left",
+    "command": "workbench.action.positionPanelLeft"
+  },
+  {
+    "key": "ctrl+alt+win+right",
+    "command": "workbench.action.positionPanelRight"
+  },
+  {
+    "key": "ctrl+alt+win+down",
+    "command": "workbench.action.positionPanelBottom"
+  },
+  // resize
+  {
+    "key": "ctrl+shift+left",
+    "command": "workbench.action.terminal.resizePaneLeft"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "workbench.action.terminal.resizePaneDown"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "workbench.action.terminal.resizePaneRight"
+  },
+  // edit pane size
+  // decrease
+  {
+    "key": "ctrl+alt+-",
+    "command": "workbench.action.decreaseViewSize"
+  },
+  // increase
+  {
+    "key": "ctrl+alt+=",
+    "command": "workbench.action.increaseViewSize"
+  }
+]
+```
+
 # Quarto snippets
 
 See more details [here](https://gist.github.com/jthomasmock/11acebd4448f171f786e01397df34116?permalink_comment_id=4269591#gistcomment-4269591)
