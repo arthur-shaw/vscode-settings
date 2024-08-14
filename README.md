@@ -188,6 +188,28 @@ The contents of `keybindings.json`
     "key": "ctrl+alt+=",
     "command": "workbench.action.increaseViewSize"
   }
+  // move editor up and down
+  // first, remove keymaps that aren't needed and conflict with desired keymaps
+  {
+    "key": "ctrl+alt+up",
+    "command": "-editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "-editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  // next apply keymaps to editor movement actions
+  // note: these "chords" for up/down are meant to mirror left/right
+  {
+    "key": "ctrl+alt+up",
+    "command": "workbench.action.moveEditorToAboveGroup"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "workbench.action.moveEditorToBelowGroup"
+  }
 ]
 ```
 
